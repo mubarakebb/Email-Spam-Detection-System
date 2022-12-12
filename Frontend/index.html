@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cipher Institute - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" style="background-color: blue;">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="#">Cipher Institute</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    </div>
+  </header><!-- End Header -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route" style="margin-top: 30px;">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a" style="font-size: 35px;">
+                Email Spam Detection
+              </h3>
+              <p class="subtitle-a">
+                A Simple Web Spam Detection System
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" >
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-content">
+                <h2 class="s-title" style="color: brown;">Brief About the Project</h2>
+                <p class="s-description text-center">
+                  Building a Simple Spam Detection System using Machine Learning to train a 
+                  <b>Logistic Regression Model</b> by feeding the Model with a dataframe 
+                  consisting of both spam and harmless content in order to make future 
+                  predictions. <br>
+                  Django framework is used to manage both the frontend (i.e html, css etc) 
+                  and the backend (i.e python) and the text or file uploaded is run through 
+                  the Model which prints the prediction and evaluation reports.
+                  <br><br>
+                  <b> Note:</b> The Accuracy of the Model is based on the Dataset used in the training Stage
+                  <b> Credits:</b> Dataset Source - Siddhardhan
+                  
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-content">
+                <h2 class="s-title">Model Evaluation Report on The <b style="color: brown;">Train Data</b></h2>
+                <p class="s-description text-center">
+                  <pre>
+                    {% if data %}
+                    {{data}}
+                    {% endif %}
+                  </pre>
+                  <h6>
+                    <b> Accuracy Score:</b>
+                    {% if data %}
+                    {{data3}}
+                    {% endif %}
+                    <br><b> (i.e 96% )</b>
+                  </h6>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-content">
+                <h2 class="s-title">Model Evaluation Report on The <b style="color: brown;">Test Data</b></h2>
+                <p class="s-description text-center">
+                  <pre>
+                    {% if data2 %}
+                    {{data2}}
+                    {% endif %}
+                  </pre>
+                </p>
+                <h6>
+                  <b> Accuracy Score:</b>
+                  {% if data %}
+                  {{data4}}
+                  {% endif %}
+                  <br><b> (i.e 97% )</b>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" >
+          
+          <div class="col-md-4" >
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-safe2"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Single Spam Detection</h2>
+                <p class="s-description text-center">
+                  A Simple Spam Mail Identifier using Scikit-Learn with Python Programing (i.e Machine Learning)
+                  to train a <b> Simple Linear Regression Model.</b>
+                </p>
+                <form action="views.py" method="POST">
+                  {% csrf_token %}
+                  <input type="text" class="form-control" placeholder="Enter/Paste Email Content Here"  name="singleInput" required>
+                  <button type="submit" name="submit" class="button button-a button-big button-rouded"  style="margin-top: 10px;" >
+                    Analysis
+                  </button>
+                </form>
+                <h2>
+                  {% if data5 %}
+                  {{data5}}
+                  {% endif %}
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" >
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-device-hdd"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Sample of Data</h2>
+                <p class="s-description text-center">
+                  <b>Spam Mail</b> - WINNER!! As a valued network customer you have been 
+                  selected to receive a £900 prize reward! To claim call 09061701461. 
+
+                </p>
+                <p class="s-description text-center">
+                  <b>Not-Spam Mail</b> - Dear Mubarak, Thank you for taking out time to 
+                  register and partake in the Halogen Cyber Security Competition Exercise. 
+                  You are required to share your Github project repository access link 
+                  click here to open send your link. Once again, thank you and we wish 
+                  you all the best and let the best candidate win.!!!
+                </p>
+                <a href="{% static 'file\dataset.csv'%}" download="HueHueq">
+                  <p class="textLink">
+                    Download Dataset
+                  </p>
+                </a>
+                
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box" style="background-color: #0078ff;">
+              <div class="service-ico">
+                  <span style="background-color: white;" class="ico-circle"><i style="color: #0078ff;" class="bi bi-box-arrow-down-right"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title" style="font-weight: bold; color: white; margin-bottom: 0px;">Results</h2>
+                <p style="color: white; margin-top: 0px;" class="s-description text-center">
+                  Classification report based on the input data 
+                </p>
+                
+                <h5 style=" color: yellow; margin-bottom: 0px;">
+                  <b> Status:</b><br> 
+                  <center>
+                    <div style=" background-color: yellow; width: 100px; height: 3px; margin: 2px 0px 2px 0px;"></div>
+                  </center>
+                    <b style="padding: 4px; margin-top: 0px; color:white; margin-bottom: 20px;" class="status"> 
+                      {% if status %}
+                        {{status}}
+                      {% endif %}
+                    </b>
+                </h5>
+
+                <h5 style="color: yellow; margin-top: 30px;">
+                  <b> Comments:</b> <br>
+                  <div style=" background-color: white; height: auto; margin-top: 8px;" >
+                    <b style=" align-self: auto; color: #0078ff;" class="comment"> 
+                      {% if comment %}
+                          {{comment}}
+                      {% endif %}
+                    </b>
+                  </div>
+                </h5>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-upload"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Mutiple Spam Detection</h2>
+                <p class="s-description text-center" style="margin-bottom: 0px;">
+                  Upload CSV file containing both spam & harmless content
+                </p>
+                <a href="{% static 'img\dataSample.PNG'%}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <h6  class="textLink">
+                    See Example
+                  </h6>
+                </a>
+                <input type="file" style="margin: 5px 0px 10px 0px; color:white; background-color: #0078ff; padding: 5px; border-radius: 10px;" value="Upload">
+                <input type="button" class="button button-a button-big button-rouded" value="Analysis">
+
+              </div>
+            </div>
+          </div> -->
+        
+        </div>
+        
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Cipher Institute</strong>. All Rights Reserved</p>
+            <div class="credits">
+              
+              Designed by <a href="https://twitter.com/MubarakTigosmith?s=09">mubarak</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.min.js' %}"></script>
+  
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!-- Backend Section -->
+  
+
+</body>
+
+</html>
