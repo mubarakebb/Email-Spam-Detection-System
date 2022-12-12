@@ -40,7 +40,7 @@ Install Python necessary Library and Extentions
   pip install django
   pip install requests
   pip install render
-  pip install sci-kit learn
+  pip install scikit-learn
 ```
 
 From the project directory run
@@ -75,7 +75,7 @@ If you have any feedback, please reach out to us at mubarakebb@yahoo.com
 
 
 ## Appendix
-DataSet Source - Siddhard
+DataSet Source - _Siddhard_
 In the future you will be able to upload multiple content for
 predictiion.
 The file upload is currently a work in progress
