@@ -14,7 +14,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 
 """ Data Collection Stage"""
 # Loading The Dataset into the Pandas Dataframe
-mail_data = pd.read_csv(r'main/static/file/dataset.csv')
+mail_data = pd.read_csv(r'main\static\file\dataset.csv')
 #print(mail_data)
 
 """Data Evaluation and Validation"""
