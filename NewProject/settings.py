@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c%a36rfw2b1xt*yto5b4h$-h2i-2&5yr#xf@wui0$-84k_*7c^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://email-spam-detection-system-production.up.railway.app/','*']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://email-spam-detection-system-production.up.railway.app/']
 
 
 # Application definition
