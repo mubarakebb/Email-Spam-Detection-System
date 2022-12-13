@@ -16,7 +16,7 @@ to the trained model for prediction. Django framework is used to manage the fron
 * Analysis user input and make prediction.
 * Render result on the frontend (i.e. Html).
 
-The live version of this project can be as at https://wwww.email-spam-detection-system-production.up.railway.app
+The live version of this project can be as at https://www.email-spam-detection-system-production.up.railway.app
 
 ## Screenshots
 
