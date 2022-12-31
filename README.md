@@ -69,9 +69,9 @@ your personal purpose. its a good starter
 Contributions are always welcome!
 
 if you find an issuse or would like to submit an improvement
-of this project, please submit an issue with the Issue Tab above.
+of this project, please submit an `issue` with the Issue Tab above.
 
-if you would like to submit a Pull Request Please adhere to this project's `code of conduct`.
+if you would like to submit a `Pull Request` Please adhere to this project's `code of conduct`.
 
 
 ## Feedback
