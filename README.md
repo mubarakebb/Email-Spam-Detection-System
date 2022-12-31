@@ -10,8 +10,12 @@ Python programming is used for the backend and html, css, js and bostrap for the
 Basically the system takes the input of a user and feed it
 to the trained model for prediction. Django framework is used to manage the frontend and the backend.
 
+## About the Dataset
+Introduction
+This is a csv file containing related information of `10000` randomly picked email files and their respective labels for spam or not-spam classification.The first column indicates Label for prediction : `spam` and `not_Spam`. The last column has the `mail contents`.
+
 * Create an email spam detection system.
-* Dataset contain both spam and not spam mail.
+* Email Spam Classification Dataset CSV.
 * Create a Logistic Regression Model using machine Learning.
 * Fetch/collect user input and feed into the Model
 * Analysis user input and make prediction.
@@ -71,14 +75,12 @@ if you would like to submit a Pull Request Please adhere to this project's `code
 
 
 ## Feedback
-
 If you have any feedback, please reach out to us at mubarakebb@yahoo.com
 
 
 ## Appendix
-DataSet Source - _Siddhard_
+DataSet Source - _Kaggle_ & _Siddhard_
 
 In the future you will be able to upload multiple content for
-predictiion.
-The file upload is currently a work in progress
+predictiion. The file upload is currently a work in progress
 
