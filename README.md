@@ -11,6 +11,7 @@ Basically the system takes the input of a user and feed it
 to the trained model for prediction. Django framework is used to manage the frontend and the backend.
 
 * Create an email spam detection system.
+* Dataset contain both spam and not spam mail.
 * Create a Logistic Regression Model using machine Learning.
 * Fetch/collect user input and feed into the Model
 * Analysis user input and make prediction.
